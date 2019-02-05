@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/men"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#c2ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#e4e4e4"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="true"
+        android:ems="10"
+        android:textSize="30sp"
+        android:id="@+id/textViewName"
+        android:text="Name : Michael Jorden"
+        android:layout_toRightOf="@+id/profile_image"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textColor="#e4e4e4"
+        android:fontFamily="sans-serif-thin"
+        android:ems="10"
+        android:textSize="20sp"
+        android:id="@+id/textViewEmail"
+        android:text="Email : michaeljorden@gmail.com"
+        android:layout_toRightOf="@+id/profile_image"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#a50ab3"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4deaeaea"
+                android:text="CALENDER"
+                android:textSize="20sp"
+                android:textColor="#e4e4e4"
+                android:fontFamily="sans-serif"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#b3ad0a"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4deaeaea"
+                android:text="TO-DO"
+                android:textSize="20sp"
+                android:textColor="#e4e4e4"
+                android:fontFamily="sans-serif"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#4bffffff"
+        android:layout_height="10dp"
+        android:layout_margin="20dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text ="Select your availability"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:id="@+id/textViewcandidateAvailability"
+            android:paddingLeft="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/dataholderspinner"
+            android:spinnerMode="dropdown"
+            android:popupBackground="#FFF"
+            android:entries="@array/Availability"></Spinner>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="20dp"
+            android:background="#FF00FF00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text ="Enter your skills"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:id="@+id/textViewcandidateskills"
+            android:paddingLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/editTextSkills"
+            >
+            <EditText
+                android:id="@+id/editTextSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#c9c9c9"
+                android:layout_below="@id/editTextSkills"
+                android:hint="Enter skills required"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:fontFamily="sans-serif-thin"
+                android:ems="10"
+                android:inputType="text" />
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/editTextSkills"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_add_circle_black_24dp"
+                android:drawableStart="@drawable/ic_add_circle_black_24dp"
+                android:text="ADD"
+                android:textColor="#FFF"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scrollbars="vertical"
+                android:background="@android:color/transparent"
+                android:layout_below="@id/editTextSkills"
+                >
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn"
+            android:id="@+id/update_create_candidate"
+            android:text="Update"/>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_client"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/my_bg_anim"
+    tools:context=".ClientActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form"
+        android:id="@+id/LLform"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="sans-serif-thin"
+        android:ems="10"
+        android:backgroundTint="#c9c9c9"
+        android:hint="Enter Client Name" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#c9c9c9"
+        android:fontFamily="sans-serif-thin"
+        android:ems="10"
+        android:hint="Enter Client email" />
+
+    <TextView
+        android:id="@+id/industrytextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Select Industry"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+
+
+    <Spinner
+        android:id="@+id/spinnerIndustries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/industrytextview"
+        android:fontFamily="sans-serif-thin"
+        android:ems="10"
+        android:background="@drawable/dataholderspinner"
+        android:spinnerMode="dropdown"
+        android:backgroundTint="#d2d2d2"
+        android:popupBackground="#FFF"
+        android:entries="@array/Industry"></Spinner>
+
+    <Button
+        android:id="@+id/buttonAddClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerIndustries"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/btn"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/buttonViewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddClient"
+        android:fontFamily="sans-serif"
+        android:layout_margin="15dp"
+        android:background="@drawable/btn"
+        android:visibility="gone"
+        android:text="View All Requirement" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLform"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Clients"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:text="Tap on an Client to add and view Requirements"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
+
+    <ListView
+        android:id="@+id/listViewClients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/textView1"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="#1acccccc"
+    android:paddingBottom="5dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="5dp"
+    android:layout_height="90dp"
+    android:layout_margin="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1b5c94"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/sap"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#c2ffffff"/>
+
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/mImage"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+
+        <TextView
+            android:id="@+id/mLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mTitle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/mImage"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#FFFFFF"
+            android:ems="10"
+            android:text="Chicago, Illinois"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+        <TextView
+            android:id="@+id/mClientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLocation"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/mImage"
+            android:text="SAP"
+            android:textColor="#FFFFFF"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/mTitle"
+            android:layout_marginLeft="180dp"
+            android:id="@+id/mApplybtn"
+            android:background="#cecece"
+            android:textColor="#1b5c94"
+            android:layout_toRightOf="@id/mImage"
+            android:text="Apply"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/my_bg_anim"
+    android:id="@+id/myProfileLayout"
+    tools:context="app.recruiter.intellingent.intellicruiter.CommonUserProfileActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/user_registration"
+        android:fontFamily="sans-serif"
+        android:screenOrientation="portrait"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <ScrollView
+        android:id="@+id/profileForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="37dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/enter_email"
+                android:fontFamily="sans-serif"
+                android:screenOrientation="portrait"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/User_Type"
+                android:layout_margin="15dp"
+                android:textColor="#FFFFFF"
+                />
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#1AFFFFFF"
+                android:ems="10"
+                android:entries="@array/Type"
+                android:fontFamily="sans-serif-thin" />/Spinner>
+
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:ems="10"
+                android:hint="@string/enter_phonenumber"
+                android:inputType="number"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+            <EditText
+                android:id="@+id/editTextDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:ems="10"
+                android:hint="@string/dob"
+                android:inputType="date"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/User_Gender"
+                android:layout_margin="15dp"
+                android:textColor="#FFFFFF"
+                />
+            <Spinner
+                android:id="@+id/spinnertGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#1AFFFFFF"
+                android:ems="10"
+                android:entries="@array/Gender"
+                android:fontFamily="sans-serif-thin" />/Spinner>
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif-thin"
+                android:ems="10"
+                android:hint="@string/enter_address"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="@string/re_enter_city"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+            <EditText
+                android:id="@+id/editTextState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="@string/re_enter_state"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+
+            <EditText
+                android:id="@+id/editTextCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:ems="10"
+                android:fontFamily="sans-serif-thin"
+                android:hint="@string/re_enter_country"
+                android:inputType="textPostalAddress"
+                android:textColorHint="@color/colorTextSignUp"
+                android:textColor="@color/colorTextSignUp" />
+
+            <Button
+                android:id="@+id/buttonAddUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/btn"
+                android:text="@string/Update_Profile" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

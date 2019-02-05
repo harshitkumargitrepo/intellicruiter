@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "133933015095",
+    "firebase_url": "https://intellicruiter.firebaseio.com",
+    "project_id": "intellicruiter",
+    "storage_bucket": "intellicruiter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133933015095:android:55cc9c57e7ea5581",
+        "android_client_info": {
+          "package_name": "app.recruiter.intellingent.intellicruiter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133933015095-30ogb0e03b2fu98aasf4td1gp53l0o01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.recruiter.intellingent.intellicruiter",
+            "certificate_hash": "66e89c8783e4171b70549de11994c20e235dac25"
+          }
+        },
+        {
+          "client_id": "133933015095-nnet0nbcoopkgeo4hk9mi0mdstc45mbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_yQE2WuL1sfB1RbkLmjXIkivXo9JsD2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133933015095-nnet0nbcoopkgeo4hk9mi0mdstc45mbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

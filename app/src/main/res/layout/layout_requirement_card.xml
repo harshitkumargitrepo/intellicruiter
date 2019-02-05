@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_anim"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dataholderclient"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dataholderclient"
+        android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imageView"
+        android:fontFamily="sans-serif-thin"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:text="Senior Data Analyst"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+         />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/imageView"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:text="Chicago, Illinois"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocation"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageView"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="4.7"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewClientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRating"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imageView"
+            android:text="SAP"
+            android:textColor="#FFFFFF"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

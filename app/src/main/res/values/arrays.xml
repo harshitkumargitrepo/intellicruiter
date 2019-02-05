@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="Type">
+        <item></item>
+        <item>Client</item>
+        <item>Recruiter</item>
+        <item>Candidate</item>
+    </string-array>
+    <string-array name="Industry">
+        <item>Information Technology</item>
+        <item>Government</item>
+        <item>Manufacturing</item>
+    </string-array>
+    <string-array name="Availability">
+        <item>Not Available</item>
+        <item>Available</item>
+    </string-array>
+    Availability
+</resources>
